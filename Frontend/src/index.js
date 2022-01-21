@@ -1,7 +1,9 @@
 import React                             from "react";
 import ReactDOM                          from "react-dom";
 import { BrowserRouter, Route, Switch }  from "react-router-dom";
-
+import store from "./store";
+import { Provider } from "react-redux";
+import { ToastContainer } from 'react-toastify';
 //Image LightBox
 import SimpleReactLightbox               from 'simple-react-lightbox'
 
@@ -77,7 +79,10 @@ class Root extends React.Component{
 ReactDOM.render(
     <React.StrictMode>
         <SimpleReactLightbox>
-            <Root />
+            <Provider store={store}>
+                <Root />
+                <ToastContainer />
+            </Provider>
         </SimpleReactLightbox>
     </React.StrictMode>,
     document.getElementById("root")
