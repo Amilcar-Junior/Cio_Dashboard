@@ -119,7 +119,10 @@ class Headers extends Component {
                                                 <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/`} onClick={this.scrollTop}  >Home</NavLink >
                                             </li>
                                             <li>
-                                                <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/about-us`} onClick={this.scrollTop} >Info</NavLink >
+                                                <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/info`} onClick={this.scrollTop} >Info</NavLink >
+                                            </li>
+                                            <li>
+                                                <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/caixa-economica`} onClick={this.scrollTop} >Caixa Economica</NavLink >
                                             </li>
                                             <li className="has-child-menu">
                                                 <Link to={"#"}>CEO Dashboard</Link>
@@ -145,9 +148,7 @@ class Headers extends Component {
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/contact`} onClick={this.scrollTop} >Contact Us</NavLink>
-                                            </li>
+                                            
                                         </ul>
                                         <div className="navbar-icons-2">
                                             <div className="searchbar-open">

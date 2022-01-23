@@ -62,33 +62,27 @@ class MainBanner extends Component {
                     <div className="slider-item slider-item-1">
                         <div className="container">
                             <div className="slider-content wow fadeInLeft animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <h2>Praias de Cabo Verde</h2>
-                                <h5>Santiago</h5>
-                                <div className="banner-btn">
-                                    <Link to={`${process.env.PUBLIC_URL}/package`} className="btn-common">Ver Mas</Link>
-                                </div>
+                                <h2>Caixa Economica</h2>
+                                <h5>Caixa Mobile</h5>
+                                
                             </div>
                         </div>
                     </div>
                     <div className="slider-item slider-item-2">
                         <div className="container">
                             <div className="slider-content wow fadeInLeft animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <h2>Praias de Cabo Verde</h2>
-                                <h5>Boa Vista</h5>
-                                <div className="banner-btn">
-                                    <Link to={`${process.env.PUBLIC_URL}/package`} className="btn-common">Ver Mas</Link>
-                                </div>
+                                <h2>Caixa Economica</h2>
+                                <h5>Cartão Visa</h5>
+                                
                             </div>
                         </div>
                     </div>
                     <div className="slider-item slider-item-3">
                         <div className="container">
                             <div className="slider-content wow fadeInLeft animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-                                <h2>Praias de Cabo Verde</h2>
-                                <h5>Sal</h5>
-                                <div className="banner-btn">
-                                    <Link to={`${process.env.PUBLIC_URL}/package`} className="btn-common">Ver Mas</Link>
-                                </div>
+                                <h2>Caixa Economica</h2>
+                                <h5>Obrigado</h5>
+                                
                             </div>
                         </div>
                     </div>
@@ -113,7 +107,7 @@ class MainBanner extends Component {
                             <div className="col-lg-3">
                                 <div className="custom-select">
                                     <select>
-                                        <option value={0}>Travel Type</option>
+                                        <option value={0}>Santiago</option>
                                         <option value={1}>City Tours</option>
                                         <option value={2}>Vacation Tours</option>
                                         <option value={3}>Couple Tours </option>
