@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import {Link}               from "react-router-dom";
+import { Link } from "react-router-dom";
 import $ from "jquery";
 
 //Import Image
-import secondLogo           from "../../assets/images/logo-2.png"
+import secondLogo from "../../assets/images/logo-2.png"
 
 class Footers extends Component {
     //Inherited Parent options.
@@ -15,13 +15,13 @@ class Footers extends Component {
     }
 
     //Init Js Scripts
-    componentDidMount(){
+    componentDidMount() {
         this.intiScripts();
     }
 
-    intiScripts(){
+    intiScripts() {
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             //  custom select input
             var x, i, j, l, ll, selElmnt, a, b, c;
             x = document.getElementsByClassName("custom-select");
@@ -38,7 +38,7 @@ class Footers extends Component {
                 for (j = 1; j < ll; j++) {
                     c = document.createElement("DIV");
                     c.innerHTML = selElmnt.options[j].innerHTML;
-                    c.addEventListener("click", function(e) {
+                    c.addEventListener("click", function (e) {
                         var y, i, k, s, h, sl, yl;
                         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
                         sl = s.length;
@@ -61,7 +61,7 @@ class Footers extends Component {
                     b.appendChild(c);
                 }
                 x[i].appendChild(b);
-                a.addEventListener("click", function(e) {
+                a.addEventListener("click", function (e) {
                     /*when the select box is clicked, close any other select boxes,
                     and open/close the current select box:*/
                     e.stopPropagation();
@@ -92,23 +92,23 @@ class Footers extends Component {
             document.addEventListener("click", closeAllSelect);
 
             // mobile menu
-            $('.hamburger').on('click',function (event) {
+            $('.hamburger').on('click', function (event) {
                 $(this).toggleClass('h-active');
                 $('.main-nav').toggleClass('slidenav');
             });
 
-            $('.header-home .main-nav ul li  a').on('click',function (event) {
+            $('.header-home .main-nav ul li  a').on('click', function (event) {
                 $('.hamburger').removeClass('h-active');
                 $('.main-nav').removeClass('slidenav');
             });
 
-            $(".main-nav .fl").on('click', function(event) {
+            $(".main-nav .fl").on('click', function (event) {
                 var $fl = $(this);
                 $(this).parent().siblings().find('.sub-menu').slideUp();
                 $(this).parent().siblings().find('.fl').addClass('flaticon-plus').text("+");
-                if($fl.hasClass('flaticon-plus')){
+                if ($fl.hasClass('flaticon-plus')) {
                     $fl.removeClass('flaticon-plus').addClass('flaticon-minus').text("-");
-                }else{
+                } else {
                     $fl.removeClass('flaticon-minus').addClass('flaticon-plus').text("+");
                 }
                 $fl.next(".sub-menu").slideToggle();
@@ -119,9 +119,9 @@ class Footers extends Component {
             var accountCard = document.querySelectorAll('.account-dropdown')
             var userIcon = document.querySelectorAll('.user-dropdown-icon i')
 
-            userIcon.forEach((el)=>{
-                el.addEventListener('click', ()=>{
-                    accountCard.forEach((element)=>{
+            userIcon.forEach((el) => {
+                el.addEventListener('click', () => {
+                    accountCard.forEach((element) => {
                         element.classList.toggle("activeCard")
                     })
                 })
@@ -132,30 +132,30 @@ class Footers extends Component {
             var searchCard = document.querySelectorAll('.main-searchbar')
             var searchClose = document.querySelectorAll('.searchbar-close i')
 
-            searchOpen.forEach((el)=>{
-                el.addEventListener('click',()=>{
-                    searchCard.forEach((el)=>{
+            searchOpen.forEach((el) => {
+                el.addEventListener('click', () => {
+                    searchCard.forEach((el) => {
                         el.classList.add('activeSearch')
                     })
                 })
             })
-            searchClose.forEach((el)=>{
-                el.addEventListener('click',()=>{
-                    searchCard.forEach((el)=>{
+            searchClose.forEach((el) => {
+                el.addEventListener('click', () => {
+                    searchCard.forEach((el) => {
                         el.classList.remove('activeSearch')
                     })
                 })
             });
 
-            window.onclick = function(event){
-                searchCard.forEach((el)=>{
-                    if(event.target === el){
+            window.onclick = function (event) {
+                searchCard.forEach((el) => {
+                    if (event.target === el) {
                         el.classList.remove('activeSearch')
                     }
                 });
-                if(!event.target.matches('.user-dropdown-icon i')){
-                    accountCard.forEach((element)=>{
-                        if(element.classList.contains('activeCard')){
+                if (!event.target.matches('.user-dropdown-icon i')) {
+                    accountCard.forEach((element) => {
+                        if (element.classList.contains('activeCard')) {
                             element.classList.remove('activeCard')
                         }
                     })
@@ -163,7 +163,7 @@ class Footers extends Component {
             };
 
             // sticky navabr js
-            $(window).on('scroll',function () {
+            $(window).on('scroll', function () {
                 var scroll = $(window).scrollTop();
                 if (scroll >= 10) {
                     $(".header-area").addClass("sticky");
@@ -186,8 +186,7 @@ class Footers extends Component {
     componentWillUnmount() {
 
     }
-    scrollTop()
-    {
+    scrollTop() {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -196,8 +195,8 @@ class Footers extends Component {
     render() {
         return (
             <>
-                {/* ===============  Newsletter area start =============== */}h
-                
+                {/* ===============  Newsletter area start =============== */}
+
                 {/* ===============  Newsletter area end =============== */}
 
                 {/* ==============  Footer area start================= */}
@@ -252,8 +251,9 @@ class Footers extends Component {
                                             <div className="contact-box">
                                                 <span><i className="bx bx-location-plus" /></span>
                                                 <div>
-                                                    <Link to={"#"}>2752 Willison Street <br />
-                                                        Eagan, United State</Link>
+                                                    <Link to={"#"}>
+                                                        Cabo Verde, Praia
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -264,19 +264,19 @@ class Footers extends Component {
                                             <div className="category-list">
                                                 <ul>
                                                     <li>
-                                                        <Link to={`${process.env.PUBLIC_URL}/contact`} onClick={this.scrollTop} >Contact us</Link>
+                                                        <Link to={`${process.env.PUBLIC_URL}/`} onClick={this.scrollTop} >Home</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to={`${process.env.PUBLIC_URL}/about-us`} onClick={this.scrollTop}>About us</Link>
+                                                        <Link to={`${process.env.PUBLIC_URL}/info`} onClick={this.scrollTop}>Info</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to={`${process.env.PUBLIC_URL}/destination`} onClick={this.scrollTop} >Destinations</Link>
+                                                        <Link to={`${process.env.PUBLIC_URL}/caixa-economica`} onClick={this.scrollTop} >Caixa Economica</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to={`${process.env.PUBLIC_URL}/blog`} onClick={this.scrollTop}>our Blogs</Link>
+                                                        <Link to={`${process.env.PUBLIC_URL}/CEO`} onClick={this.scrollTop}>CEO</Link>
                                                     </li>
                                                     <li>
-                                                        <Link to={`${process.env.PUBLIC_URL}/package`} className="sub-item" onClick={this.scrollTop}>Package</Link>
+                                                        <Link to={`${process.env.PUBLIC_URL}/CIO`} className="sub-item" onClick={this.scrollTop}>CIO</Link>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -289,7 +289,7 @@ class Footers extends Component {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="copyrigth-area">
-                                    <p>Copyright 2021 <Link to={`#`}>SandWatch</Link> | Design By <Link to={`#`}>Ruben Correia</Link></p>
+                                    <p>Copyright 2022 <Link to={`#`}>Caixa Economica</Link></p>
                                 </div>
                             </div>
                         </div>

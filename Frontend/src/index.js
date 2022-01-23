@@ -52,7 +52,7 @@ class Root extends React.Component{
                     <Switch>
                         <Route exact path='/' component={defaultLayout} /> 
                         <Layout>
-                            <Route path={`${process.env.PUBLIC_URL}/about-us`} component={aboutUs} />
+                            <Route path={`${process.env.PUBLIC_URL}/info`} component={aboutUs} />
                             <Route path={`${process.env.PUBLIC_URL}/destination`} component={destinations} />
                             <Route path={`${process.env.PUBLIC_URL}/package`} component={packages} />
                             <Route path={`${process.env.PUBLIC_URL}/package-sidebar`} component={packageSidebar} />

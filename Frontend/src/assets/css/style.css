@@ -5481,3 +5481,17 @@ li.package-card-sm .package-info h5 span {
   font-size: 0.75rem;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.end{
+  margin-top: 50px;
+}
+
+.center {
+
+  color: #55ab26;
+  margin: 0;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
