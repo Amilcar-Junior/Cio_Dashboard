@@ -114,18 +114,7 @@ class Headers extends Component {
                                             <img src={secondLogo} alt="" width={200} height={50} className="img-fluid" />
                                         </div>
                                         <ul>
-                                            {/* <li className="has-child-menu">
-                                            <Link to={"#"}>Pragina Inicial</Link>
-                                            <i className="fl flaticon-plus">+</i>
-                                            <ul className="sub-menu">
-                                                <li>
-                                                    <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/`} className="sub-item" onClick={this.scrollTop}>Home Page 1</NavLink>
-                                                </li>
-                                                <li>
-                                                    <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/home-page-2`} className="sub-item" onClick={this.scrollTop}>Home Page 2</NavLink>
-                                                </li>
-                                            </ul>
-                                        </li> */}
+                                            
                                             <li>
                                                 <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/`} onClick={this.scrollTop}  >Home</NavLink >
                                             </li>
@@ -156,66 +145,6 @@ class Headers extends Component {
                                                     </li>
                                                 </ul>
                                             </li>
-
-
-                                            {/* =============== Elenimar sem ter erro =============== */}
-                                            {/* <li className="has-child-menu">
-                                                <Link to={"#"}>Tour Package</Link>
-                                                <i className="fl flaticon-plus">+</i>
-                                                <ul className="sub-menu">
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/package`} className="sub-item" onClick={this.scrollTop}>package</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/package-sidebar`} className="sub-item" onClick={this.scrollTop}>package sidebar</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/package-standard`} className="sub-item" onClick={this.scrollTop}>package standard</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/package-details`} className="sub-item" onClick={this.scrollTop}>package details</NavLink>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="has-child-menu">
-                                                <Link to={"#"}>Blogs</Link>
-                                                <i className="fl flaticon-plus">+</i>
-                                                <ul className="sub-menu">
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/blog`} className="sub-item" onClick={this.scrollTop}>Blog page</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/blog-sidebar`} className="sub-item" onClick={this.scrollTop}>Blog sidebar</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/blog-standard`} className="sub-item" onClick={this.scrollTop}>Blog standard</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/blog-details`} className="sub-item" onClick={this.scrollTop}>blog-details </NavLink>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="has-child-menu">
-                                                <Link to={"#"}>Pages</Link>
-                                                <i className="fl flaticon-plus">+</i>
-                                                <ul className="sub-menu">
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/gallary`} className="sub-item" onClick={this.scrollTop}>gallary page</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/guide`} className="sub-item" onClick={this.scrollTop}>guide page</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/destination`} className="sub-item" onClick={this.scrollTop}>destination page</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/404`} className="sub-item" onClick={this.scrollTop}>404 Page</NavLink>
-                                                    </li>
-                                                    <li>
-                                                        <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/faq`} className="sub-item" onClick={this.scrollTop}>FAQ page</NavLink>
-                                                    </li>
-                                                </ul>
-                                            </li> */}
                                             <li>
                                                 <NavLink activeClassName="active" to={`${process.env.PUBLIC_URL}/contact`} onClick={this.scrollTop} >Contact Us</NavLink>
                                             </li>
