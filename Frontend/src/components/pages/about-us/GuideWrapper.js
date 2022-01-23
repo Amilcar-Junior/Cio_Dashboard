@@ -104,6 +104,7 @@ class GuideWrapper extends Component {
                         </OwlCarousel>
                     </div>
                 </div>
+                <div className="end"/>
                 {/* ===============  Guide wrapper end =============== */}
             </>
         );
