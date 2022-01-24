@@ -91,40 +91,7 @@ class MainBanner extends Component {
             {/* ===============  Main banner area end =============== */}
 
             {/* ===============  findfrom area start ============= */}
-            <div className="find-form">
-                <div className="container">
-                    <form className="findfrom-wrapper">
-                        <div className="row">
-                            <div className="col-lg-3">
-                                <input type="text" name="whereto" placeholder="Where To..." />
-                            </div>
-                            <div className="col-lg-3">
-                                <div className="calendar-input">
-                                    <DatePicker selected={startDate} onChange={(date) => this.changeDatepickerHandeller(date)}  className="input-field check-in" placeholder="dd-mm-yy"/>
-                                    <i className="flaticon-calendar" />
-                                </div>
-                            </div>
-                            <div className="col-lg-3">
-                                <div className="custom-select">
-                                    <select>
-                                        <option value={0}>Santiago</option>
-                                        <option value={1}>City Tours</option>
-                                        <option value={2}>Vacation Tours</option>
-                                        <option value={3}>Couple Tours </option>
-                                        <option value={4}>Adventure Tours</option>
-                                        <option value={5}>Group Tours</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div className="col-lg-3">
-                                <div className="find-btn">
-                                    <Link to={`#`} className="btn-second"><i className="bx bx-search-alt" />Procurar</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            
 
             {/* ===============  findfrom area end =============== */}
         </>

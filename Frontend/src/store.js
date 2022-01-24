@@ -1,15 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
-import servicoReducer from "./conection/servicos/reducers";
+import equipamentoReducer from "./conection/equipamento/reducers";
+import requisicaoReducer from "./conection/requisicaos/reducers";
 
 
-/* import testeReducer from "./conection/testes/reducers"; */
 
 export default configureStore({
 
  reducer: {
 
-   /* testes: testeReducer, */
-   servicos: servicoReducer,
+
+   equipamentos: equipamentoReducer,
+   requisicaos: requisicaoReducer,
    
  },
 
