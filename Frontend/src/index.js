@@ -34,6 +34,7 @@ import blogDetails                      from "./components/pages/blog/BlogDetail
 //Initializations All Css
 import './index.css';
 import './index.scss';
+import CaixaEconomica from "./components/pages/caixa-economica/CaixaEconomica";
 
 //Default Warniing Error Hide
 console.log = console.warn = console.error = () => {};
@@ -67,6 +68,11 @@ class Root extends React.Component{
                             <Route path={`${process.env.PUBLIC_URL}/blog-standard`} component={blogStandard} />
                             <Route path={`${process.env.PUBLIC_URL}/blog-details`} component={blogDetails} />
                             <Route path={`${process.env.PUBLIC_URL}/contact`} component={contact} />
+                            
+                            
+                            
+                            <Route path={`${process.env.PUBLIC_URL}/caixa-economica`} component={CaixaEconomica} />
+
                         </Layout>
                     </Switch>
             </BrowserRouter>
