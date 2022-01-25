@@ -35,9 +35,7 @@ import blogDetails                      from "./components/pages/blog/BlogDetail
 import './index.css';
 import './index.scss';
 import CaixaEconomica from "./components/pages/caixa-economica/CaixaEconomica";
-
-//Default Warniing Error Hide
-console.log = console.warn = console.error = () => {};
+import Hardware from "./components/pages/cio-hardware/Hardware";
 
 /*
 * Version : 0.1
@@ -72,6 +70,9 @@ class Root extends React.Component{
                             
                             
                             <Route path={`${process.env.PUBLIC_URL}/caixa-economica`} component={CaixaEconomica} />
+
+                            <Route path={`${process.env.PUBLIC_URL}/hardware`} component={Hardware} />
+
 
                         </Layout>
                     </Switch>
