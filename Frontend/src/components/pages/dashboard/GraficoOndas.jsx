@@ -70,32 +70,32 @@ class GraficoOndas extends Component {
         let valor12 = 0
 
         resultado1.map(e => {
-            if (moment(e.date).format('MMMM YYYY') == 'January 2022') {
-                valor1 = valor1 + e.wave_heigth
-            } else if (moment(e.date).format('MMMM YYYY') == 'February 2022') {
-                valor2 = valor2 + e.wave_heigth
+            if (moment(e.date).format('MMMM') == 'January') {
+                valor1 = e.wave_heigth
+            } else if (moment(e.date).format('MMMM') == 'February') {
+                valor2 += e.wave_heigth
             }
-            else if (moment(e.date).format('MMMM YYYY') == 'March 2022') {
-                valor3 = valor3 + e.wave_heigth
-            } else if (moment(e.date).format('MMMM YYYY') == 'April 2022') {
-                valor4 = valor4 + e.wave_heigth
-            } else if (moment(e.date).format('MMMM YYYY') == 'May  2022') {
-                valor4 = valor5 + e.wave_heigth
+            else if (moment(e.date).format('MMMM') == 'March') {
+                valor3 += e.wave_heigth
+            } else if (moment(e.date).format('MMMM') == 'April') {
+                valor4 += e.wave_heigth
+            } else if (moment(e.date).format('MMMM') == 'May') {
+                valor4 += e.wave_heigth
             }
-            else if (moment(e.date).format('MMMM YYYY') == 'June 2022') {
-                valor6 = valor6 + e.wave_heigth
-            } else if (moment(e.date).format('MMMM YYYY') == 'July 2022') {
-                valor7 = valor7 + e.wave_heigth
-            } else if (moment(e.date).format('MMMM YYYY') == ' August 2022') {
-                valor8 = valor8 + e.wave_heigth
-            } else if (moment(e.date).format('MMMM YYYY') == 'September  2022') {
-                valor9 = valor9 + e.wave_heigth
-            } else if (moment(e.date).format('MMMM YYYY') == 'October  2022') {
-                valor10 = valor10 + e.wave_heigth
-            } else if (moment(e.date).format('MMMM YYYY') == 'November 2022') {
-                valor11 = valor11 + e.wave_heigth
-            } else if (moment(e.date).format('MMMM YYYY') == 'December 2022') {
-                valor12 = valor12 + e.wave_heigth
+            else if (moment(e.date).format('MMMM') == 'June') {
+                valor6 += e.wave_heigth
+            } else if (moment(e.date).format('MMMM') == 'July') {
+                valor7 += e.wave_heigth
+            } else if (moment(e.date).format('MMMM') == ' August') {
+                valor8 += e.wave_heigth
+            } else if (moment(e.date).format('MMMM') == 'September') {
+                valor9 += e.wave_heigth
+            } else if (moment(e.date).format('MMMM') == 'October') {
+                valor10 += e.wave_heigth
+            } else if (moment(e.date).format('MMMM YYYY') == 'November') {
+                valor11 += e.wave_heigth
+            } else if (moment(e.date).format('MMMM YYYY') == 'December') {
+                valor12 += e.wave_heigth
             }
 
         })

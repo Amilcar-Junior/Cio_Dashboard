@@ -25,7 +25,7 @@ import { styled } from "@mui/material/styles";
 import moment from "moment";
 import GraficoOndas from "./GraficoOndas";
 import GraficoCorrentes from "./GraficoCorrentes";
-import GraficoVelCorrentes from "./GraficoVelCorrentes";
+
 
 import GraficoDetritos from "./GraficoDetritos";
 import GraficoTamanhoSedimento from "./GraficoTamanhoSedimento";
@@ -164,23 +164,20 @@ class Dashboard extends Component {
                 </Box>
               </div>
            
-              <div className="col-lg-10">
+              <div className="col-lg-12">
                 {" "}
                 <br />
-              {/*   <GraficoOndas praiaId={this.state.currentPraia} /> */}
+                <GraficoOndas praiaId={this.state.currentPraia} />
               </div>
-             
-              <div className="col-lg-10">
+              <div className="end" />
+              <div className="col-lg-12">
                 {" "}
                 
                 <GraficoCorrentes praiaId={this.state.currentPraia} />
               </div>
-              <div className="end" />
-              <div className="col-lg-10">
-                {" "}
+      
               
-                <GraficoVelCorrentes praiaId={this.state.currentPraia} />
-              </div>
+            
             </div>
           </div>
         </div>
