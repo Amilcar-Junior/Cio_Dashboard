@@ -153,13 +153,15 @@ class Dashboard extends Component {
                   <Box
                     display="grid"
                     gridTemplateColumns="repeat(12, 1fr)"
-                    gap={2}
+                    gap={5}
                   >
-                    
                     <GraficoTamanhoSedimentoQuantidade praiaId={this.state.currentPraia} />
                     <GraficoTamanhoSedimento praiaId={this.state.currentPraia} />
                     <GraficoMudancaSedimento  praiaId={this.state.currentPraia} />
                     <GraficoDetritos praiaId={this.state.currentPraia} />
+                    <GraficoOndas praiaId={this.state.currentPraia} /> 
+                    <GraficoCorrentes praiaId={this.state.currentPraia} />
+                    {/* <GraficoVelCorrentes praiaId={this.state.currentPraia} /> */}
                   </Box>
                 </Box>
               </div>
@@ -167,17 +169,20 @@ class Dashboard extends Component {
               <div className="col-lg-12">
                 {" "}
                 <br />
-                <GraficoOndas praiaId={this.state.currentPraia} />
+               
+              </div>
+             
+              <div className="col-lg-12">
+                {" "}
+                
+              
               </div>
               <div className="end" />
               <div className="col-lg-12">
                 {" "}
-                
-                <GraficoCorrentes praiaId={this.state.currentPraia} />
-              </div>
-      
               
-            
+               
+              </div>
             </div>
           </div>
         </div>

@@ -1,89 +1,49 @@
 import React, { Component } from 'react';
-import Chart from 'react-apexcharts';
-import axios from "axios";
-
+import Circle1 from './Circle1';
+import CustoTotal from './CustoTotal';
+import Circle2 from './Circle2';
+import TotalEquipamento from './TotalEquipamento';
+import TotalRequisicoes from './TotalRequisicoes';
+import Barra from './Barra'
 
 class Hardware extends Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      options:{},
-      series: [44, 55, 41, 17, 15],
-      labels: ['A', 'B', 'C', 'D', 'E'],
-
-      /* selectOptionsEquipamento: [],  
-      EquipamentosID: [],
-      EquipamentosNome: [], */
-      
-    }
-  }
-
-  /* async getOptionsEquipamento() {
-    const equipamento = await axios.get("http://localhost:1337/equipamentos");
-
-    const data = equipamento.data;
-
-    const options = data.map((e) => ({
-      value: e.id,
-      label: e.nome_equipamento,
-    }));
-
-    this.setState({ selectOptionsEquipamento: options });
-    console.log(this.state.selectOptionsEquipamento);
-  }
-
-
-  async getEquipamentoId() {
-    const equipamento = await axios.get("http://localhost:1337/equipamentos");
-
-    const data = equipamento.data;
-
-    const options = data.map((e) => ({
-      value: e.id,
-
-    }));
-
-    this.setState({ EquipamentosID: options });
-  }
-
-  async getEquipamentoNome() {
-    const equipamento = await axios.get("http://localhost:1337/equipamentos");
-
-    const data = equipamento.data;
-
-    const options = data.map((e) => ({
-      label: e.nome_equipamento,
-    }));
-
-    this.setState({ EquipamentosNome: options });
-  }
-
-  componentDidMount(){
-    this.getEquipamentoId();
-    this.getEquipamentoNome();
-    this.getOptionsEquipamento();
-  } */
 
   render() {
 
     return (
       <>
-      
+
         <div className="conteiner">
           <div className='row'>
-
+          
             <div className='col-lg-4'>
-              <div className="donut">
-                <Chart options={this.state.options} series={this.state.series} type="donut" width="380" />
-              </div>
+              Total Equipamento:
+              <TotalEquipamento/>
             </div>
             <div className='col-lg-4'>
-              {/* <div className="donut">
-                <Chart options={this.state.options} series={this.state.EquipamentosID} type="donut" width="380" />
-              </div> */}
+              Total Requisições:
+              <TotalRequisicoes/>
+            </div>
+            <div className='col-lg-4'>
+              Custo Reparação: 
+              <CustoTotal/>
 
+            </div>
+
+            <div className='col-lg-7'>
+              Barra:
+              <Barra/>
+            </div>
+            <div className='col-lg-5'>
+              <div className='col-lg-12'>
+                Custo Reparação por equipamento
+                <Circle1/>
+               
+              </div>
+              <div className='col-lg-12'>
+                Equipamento por estado
+                <Circle2/>
+              </div>
             </div>
           </div>
         </div>

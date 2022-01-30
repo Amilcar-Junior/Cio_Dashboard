@@ -104,7 +104,7 @@ class GraficoTamanhoSedimento extends Component {
       
         return(
             <Box gridColumn="span 6">
-            <Item>
+            <Item elevation={3}>
             <p1>Tamanho dos Sedimentos das Praias (Quantidade)</p1>
 
 

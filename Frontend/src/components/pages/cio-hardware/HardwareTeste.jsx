@@ -1,26 +1,12 @@
 import React, { Component } from 'react';
-import Chart from 'react-apexcharts';
-import axios from "axios";
-
+import Circle1 from './Circle1';
+import CustoTotal from './CustoTotal';
+import Circle2 from './Circle2';
+import TotalEquipamento from './TotalEquipamento';
+import TotalRequisicoes from './TotalRequisicoes';
+import Barra from './Barra'
 
 class HardwareTeste extends Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      options: {},
-      series: [3, 4, 3, 3],
-      labels: ['a', 'b', 'c', 'd'],
-
-
-
-    }
-  }
-
-
-
-
 
   render() {
 
@@ -29,25 +15,34 @@ class HardwareTeste extends Component {
 
         <div className="conteiner">
           <div className='row'>
+          
             <div className='col-lg-4'>
-              Total Equipamento
+              Total Equipamento:
+              <TotalEquipamento/>
             </div>
             <div className='col-lg-4'>
-              Total Danificado
+              Total Requisições:
+              <TotalRequisicoes/>
             </div>
             <div className='col-lg-4'>
-              Custo Reparação
+              Custo Reparação: 
+              <CustoTotal/>
+
             </div>
 
             <div className='col-lg-7'>
-              Tabela
+              Barra:
+              <Barra/>
             </div>
             <div className='col-lg-5'>
               <div className='col-lg-12'>
                 Custo Reparação por equipamento
+                <Circle1/>
+               
               </div>
               <div className='col-lg-12'>
                 Equipamento por estado
+                <Circle2/>
               </div>
             </div>
           </div>

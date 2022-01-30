@@ -117,7 +117,7 @@ class GraficoOndas extends Component {
         }
         return (
                 <Box gridColumn="span 12">
-                    <Item>
+                    <Item elevation={3}>
                         <p1>Gráfico de barras das variações de
                             altura das ondas ao longo do tempo</p1>
 

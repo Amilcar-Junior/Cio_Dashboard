@@ -381,7 +381,7 @@ class GraficoTamanhoSedimento extends Component {
 
     return (
       <Box gridColumn="span 12">
-        <Item>
+        <Item elevation={3}>
           <p1>
             Gráfico de barras das mudanças de tamanho dos
             sedimentos.

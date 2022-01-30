@@ -37,8 +37,7 @@ import './index.scss';
 import CaixaEconomica from "./components/pages/caixa-economica/CaixaEconomica";
 import Hardware from "./components/pages/cio-hardware/Hardware";
 import HardwareTeste from "./components/pages/cio-hardware/HardwareTeste";
-import DashboardTeste from "./components/pages/cio-hardware/DashboardTeste";
-import ListRequisicao from "./components/pages/cio-hardware/ListRequisicao";
+
 
 /*
 * Version : 0.1
@@ -79,9 +78,7 @@ class Root extends React.Component{
                             
                             <Route path={`${process.env.PUBLIC_URL}/hardware-teste`} component={HardwareTeste} />
 
-                            <Route path={`${process.env.PUBLIC_URL}/teste`} component={DashboardTeste} />
-                            <Route path={`${process.env.PUBLIC_URL}/list-requisicao`} component={ListRequisicao} />
-
+                            
                         </Layout>
                     </Switch>
             </BrowserRouter>
