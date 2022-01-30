@@ -45,7 +45,7 @@ class TotalEquipamento extends Component {
 
             <div className='col-lg-12'>
               
-              {this.state.total}
+            <h2>{this.state.total}</h2>
               
             </div>
           </div>

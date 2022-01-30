@@ -6,7 +6,7 @@ import TotalEquipamento from './TotalEquipamento';
 import TotalRequisicoes from './TotalRequisicoes';
 import Barra from './Barra'
 
-class Hardware extends Component {
+class Software extends Component {
 
   render() {
 
@@ -15,36 +15,34 @@ class Hardware extends Component {
 
         <div className="conteiner">
           <div className='row'>
-          <div className='end' />
+          
             <div className='col-lg-4'>
-              <h3>Total Equipamento:</h3>
-              <TotalEquipamento />
+              Total Equipamento:
+              <TotalEquipamento/>
             </div>
             <div className='col-lg-4'>
-            <h3>Total Requisições:</h3>
-              <TotalRequisicoes />
+              Total Requisições:
+              <TotalRequisicoes/>
             </div>
             <div className='col-lg-4'>
-            <h3>Custo Reparação:</h3>
-              <CustoTotal />
+              Custo Reparação: 
+              <CustoTotal/>
 
             </div>
-            <div className='end' />
+
             <div className='col-lg-7'>
-              <h3>Equipamento Danificado/Funcionando:</h3>
-              <Barra />
+              Barra:
+              <Barra/>
             </div>
-            
             <div className='col-lg-5'>
               <div className='col-lg-12'>
-                <h3>Custo Reparação por equipamento:</h3>
-                <Circle1 />
-
+                Custo Reparação por equipamento
+                <Circle1/>
+               
               </div>
-              <div className='end' />
               <div className='col-lg-12'>
-                <h3>Equipamento por estado</h3>
-                <Circle2 />
+                Equipamento por estado
+                <Circle2/>
               </div>
             </div>
           </div>
@@ -54,4 +52,4 @@ class Hardware extends Component {
   }
 }
 
-export default Hardware;
+export default Software;
