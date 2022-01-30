@@ -70,32 +70,8 @@ class Headers extends Component {
                                             <Link to={`${process.env.PUBLIC_URL}/`} className="navbar-brand" onClick={this.scrollTop}><img src={logoMain} alt="" width={200} height={50} /></Link>
                                         </div>
                                         <div className="navbar-icons">
-                                            <div className="searchbar-open">
-                                                <i className="flaticon-magnifier" />
-                                            </div>
-                                            <div className="user-dropdown-icon">
-                                                <i className="flaticon-user" />
-                                                <div className="account-dropdown">
-                                                    <ul>
-                                                        <li className="account-el">
-                                                            <i className="bx bx-user-pin" />
-                                                            <Link to={"#"}>Sign in</Link>
-                                                        </li>
-                                                        <li className="account-el">
-                                                            <i className="bx bxs-user-account" />
-                                                            <Link to={"#"}>My Account</Link>
-                                                        </li>
-                                                        <li className="account-el">
-                                                            <i className="bx bx-extension" />
-                                                            <Link to={"#"}>Settings</Link>
-                                                        </li>
-                                                        <li className="account-el">
-                                                            <i className="bx bx-log-in-circle" />
-                                                            <Link to={"#"}>Log out</Link>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                        
+                                            
                                             <div className="mobile-menu d-flex ">
                                                 <div className="top-search-bar m-0 d-block d-xl-none">
                                                 </div>
@@ -150,34 +126,8 @@ class Headers extends Component {
                                             </li>
                                             
                                         </ul>
-                                        <div className="navbar-icons-2">
-                                            <div className="searchbar-open">
-                                                <i className="flaticon-magnifier" />
-                                            </div>
-                                            <div className="user-dropdown-icon">
-                                                <i className="flaticon-user" />
-                                                <div className="account-dropdown">
-                                                    <ul>
-                                                        <li className="account-el">
-                                                            <i className="bx bx-user-pin" />
-                                                            <Link to={`${process.env.PUBLIC_URL}/login`} >Sign in</Link>
-                                                        </li>
-                                                        <li className="account-el">
-                                                            <i className="bx bxs-user-account" />
-                                                            <Link to={`#`} >My Account</Link>
-                                                        </li>
-                                                        <li className="account-el">
-                                                            <i className="bx bx-extension" />
-                                                            <Link to={`#`} >Settings</Link>
-                                                        </li>
-                                                        <li className="account-el">
-                                                            <i className="bx bx-log-in-circle" />
-                                                            <Link to={`#`} >Log out</Link>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
+                                            
                                         <div className="sidebar-contact">
                                             <ul>
                                                 <li className="sidebar-single-contact"><i className="bx bxs-phone" />
@@ -193,17 +143,7 @@ class Headers extends Component {
                             </div>
                         </div>
 
-                        <form>
-                            <div className="main-searchbar">
-                                <div className="searchbar-close">
-                                    <i className="bx bx-x" />
-                                </div>
-                                <input type="text" placeholder="Search Here......" />
-                                <div className="searchbar-icon">
-                                    <i className="bx bx-search" />
-                                </div>
-                            </div>
-                        </form>
+                        
 
                     </div>
                 </header>

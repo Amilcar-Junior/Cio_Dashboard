@@ -24,13 +24,14 @@ class AboutWrapper extends Component {
                 <div className="container">
                     <div className="blog-details-wrapper pt-120">
                         <div className="row">
+                            
                             <div className="blog-details">
                                 <div className="col-lg-12">
                                     
                                     <div className="blog-gallary">
 
-                                        <img src={img1} alt="" className="img-fluid" width={700}/>
-                                        <img src={img2} alt="" className="img-fluid" width={500}/>
+                                        <img src={img1} alt="" className="img-fluid" width={600}/>
+                                        <img src={img2} alt="" className="img-fluid" width={400}/>
 
                                     </div>
                                 </div>

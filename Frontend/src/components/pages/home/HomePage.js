@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import MainBanner from "./MainBanner";
-import Packages from "./Packages";
-import Destinations from "./Destinations";
-import Blog from "./Blog";
-import Features from "./Features";
-import Review from "./Review";
-import Achievement from "./Achievement";
+import AboutWrapper from "../about-us/AboutWrapper";
+import GuideWrapper from "../about-us/GuideWrapper";
 
 //Define Default Content
 class HomePage extends Component {
@@ -50,12 +46,14 @@ class HomePage extends Component {
 
            {/*---------Start Imported All Sections-----------*/}
             <MainBanner/>
-            <Packages/>
+            <AboutWrapper/>
+           <GuideWrapper/>
+            {/* <Packages/>
             <Destinations/>
              <Achievement/>
              <Review/>
             <Features/>
-            <Blog/>
+            <Blog/> */}
            {/*---------End Imported All Sections-----------*/}
        </div>
     );
