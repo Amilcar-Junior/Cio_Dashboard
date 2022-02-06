@@ -21,7 +21,7 @@ class Hardware extends Component {
               <TotalEquipamento />
             </div>
             <div className='col-lg-4'>
-            <h3>Total Requisições:</h3>
+            <h3>Total Requisições por Manutenção:</h3>
               <TotalRequisicoes />
             </div>
             <div className='col-lg-4'>
@@ -43,7 +43,7 @@ class Hardware extends Component {
               </div>
               <div className='end' />
               <div className='col-lg-12'>
-                <h3>Equipamento por estado</h3>
+                <h3>Equipamento por Agencia:</h3>
                 <Circle2 />
               </div>
             </div>

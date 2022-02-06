@@ -67,7 +67,7 @@ class Circle extends Component {
 
             <div className='col-lg-12'>
               <div className="donut">
-                <Chart options={this.state.options} series={this.state.series} type="donut" width="480" />
+                <Chart options={this.state.options} series={this.state.series} type="pie" width="480" />
               </div>
             </div>
           </div>
