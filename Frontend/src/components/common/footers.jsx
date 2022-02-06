@@ -208,8 +208,7 @@ class Footers extends Component {
                                     <div className="footer-logo">
                                         <img src={secondLogo} alt="" className="img-fluid" />
                                     </div>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime aut ut voluptate
-                                        dolorum nisi ducimus ratione</p>
+                                    <p>Caixa o Banco Que Combina Comigo!</p>
                                     <div className="footer-social-icons">
                                         <h5>Follow Us:</h5>
                                         <ul>
